@@ -104,13 +104,63 @@
   padding: 3rem;
 }
 
+.welcome-card {
+  background: linear-gradient(135deg, rgba(255, 92, 228, 0.159), rgba(65, 0, 48, 0.088));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.welcome-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(255, 255, 255, 0.08);
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+.card-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+
+
 .welcome-message h2 {
-  color: var(--theme-purple);
+  background: linear-gradient(135deg, var(--theme-purple), var(--theme-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 1rem;
   font-size: 2rem;
+  font-weight: 700;
 }
 
 .welcome-message p {
-  color: #888;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+
+.welcome-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.5), transparent);
 }
