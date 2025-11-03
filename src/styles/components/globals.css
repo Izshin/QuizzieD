@@ -1,0 +1,52 @@
+:root {
+  --theme-pink: #ec4899;
+  --theme-purple: #8b5cf6;
+  --theme-red: #ef4444;
+  --theme-orange: #fb923c;
+  --theme-indigo: #6366f1;
+  --theme-rose: #f43f5e;
+  --theme-violet: #a855f7;
+  --theme-teal: #14b8a6;
+  --theme-vibrant-orange: #ff8a65;
+  --theme-sky: #0ea5e9;
+  --theme-bright-pink: #ff0080;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #000;
+  color: white;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Global animations */
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}

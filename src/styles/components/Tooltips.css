@@ -1,0 +1,167 @@
+/* Recharts Tooltip Styling */
+
+.recharts-tooltip-wrapper {
+  outline: none !important;
+}
+
+.recharts-default-tooltip {
+  background: rgba(15, 23, 42, 0.95) !important;
+  border: 1px solid rgba(139, 92, 246, 0.3) !important;
+  border-radius: 8px !important;
+  backdrop-filter: blur(10px) !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3) !important;
+}
+
+.recharts-tooltip-label {
+  color: var(--theme-pink) !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.recharts-tooltip-item {
+  color: #fff !important;
+  font-weight: 500 !important;
+}
+
+.recharts-tooltip-item-separator {
+  color: var(--theme-purple) !important;
+}
+
+/* Custom tooltip content styling */
+.custom-tooltip {
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 0.75rem;
+  color: #fff;
+}
+
+.custom-tooltip .tooltip-label {
+  color: var(--theme-pink);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.custom-tooltip .tooltip-item {
+  color: #fff;
+  font-weight: 500;
+  margin: 0.25rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.custom-tooltip .tooltip-separator {
+  color: var(--theme-purple);
+}
+
+.custom-tooltip .tooltip-value {
+  font-weight: 600;
+  color: var(--theme-pink);
+}
+
+/* Pie chart specific tooltips */
+.pie-tooltip {
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 0.75rem;
+  color: #fff;
+}
+
+.pie-tooltip .category-name {
+  color: var(--theme-pink);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.pie-tooltip .category-count {
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.pie-tooltip .category-percentage {
+  color: var(--theme-purple);
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+/* Bar chart tooltips */
+.bar-tooltip {
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 0.75rem;
+  color: #fff;
+}
+
+.bar-tooltip .difficulty-level {
+  color: var(--theme-pink);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.bar-tooltip .question-count {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Treemap tooltips */
+.treemap-tooltip {
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 0.75rem;
+  color: #fff;
+  max-width: 200px;
+}
+
+.treemap-tooltip .category-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.treemap-tooltip .category-title {
+  color: var(--theme-pink);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.treemap-tooltip .category-stats {
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+/* Radar chart tooltips */
+.radar-tooltip {
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 0.75rem;
+  color: #fff;
+}
+
+.radar-tooltip .metric-name {
+  color: var(--theme-pink);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.radar-tooltip .metric-value {
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.8rem;
+}

@@ -1,0 +1,116 @@
+.trivia-viz {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.trivia-viz.loading,
+.trivia-viz.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  text-align: center;
+}
+
+.loading-spinner {
+  font-size: 4rem;
+  color: var(--theme-purple);
+  margin-bottom: 1rem;
+}
+
+.trivia-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin: 0 auto 2rem auto;
+  max-width: 1200px;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+}
+
+.trivia-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
+  margin: 0;
+  background: linear-gradient(
+    45deg,
+    var(--theme-purple),
+    var(--theme-pink),
+    var(--theme-sky)
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease-in-out infinite;
+  white-space: nowrap;
+}
+
+.trivia-subtitle {
+  color: #888;
+  font-size: 1.6rem;
+  margin: 0;
+  flex: 1;
+}
+
+/* Chart Row Layouts */
+.charts-row {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+  animation: slideUp 0.6s ease-out;
+  grid-template-columns: 2fr 1fr;
+  align-items: start;
+}
+
+/* When only difficulty chart (single category selected) */
+.charts-row:has(.difficulty-chart:only-child) {
+  grid-template-columns: 1fr;
+  max-width: 800px;
+  margin: 2rem auto 0;
+}
+
+.radar-section {
+  margin-top: 2rem;
+  animation: slideUp 0.6s ease-out 0.2s both;
+}
+
+.radar-section .chart-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Initial State */
+.initial-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  text-align: center;
+  padding: 3rem;
+}
+
+.welcome-message h2 {
+  color: var(--theme-purple);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.welcome-message p {
+  color: #888;
+  font-size: 1.1rem;
+}

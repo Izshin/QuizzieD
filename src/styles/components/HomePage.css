@@ -1,0 +1,100 @@
+.homepage {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  position: relative;
+}
+
+.title {
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: 900;
+  margin-bottom: 2rem;
+  background: linear-gradient(
+    45deg,
+    var(--theme-bright-pink),
+    var(--theme-purple),
+    var(--theme-sky),
+    var(--theme-teal),
+    var(--theme-vibrant-orange),
+    var(--theme-rose)
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease-in-out infinite;
+  letter-spacing: -0.02em;
+}
+
+.slogan {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  color: #888;
+  margin-bottom: 3rem;
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.4;
+}
+
+.find-out-btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--theme-purple), var(--theme-pink));
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.find-out-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+  background: linear-gradient(135deg, var(--theme-pink), var(--theme-purple));
+}
+
+.transition-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* darker, muted gradient to better match the dark main menu */
+  background: linear-gradient(
+    270deg,
+    #1a0636,
+    #3b0b2e,
+    #071026,
+    #2e0b4a
+  );
+  background-size: 200% 200%;
+  animation: gradientWave 2.5s ease-in-out;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes gradientWave {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.question-mark {
+  font-size: 15rem;
+  color: white;
+  font-weight: 900;
+  text-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+  filter: drop-shadow(0 10px 30px rgba(255, 255, 255, 0.3));
+  transform-origin: center center;
+}

@@ -1,0 +1,164 @@
+/* Responsive Design for Mobile and Tablets */
+
+@media (max-width: 768px) {
+  .charts-row {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+  }
+  
+  .pie-chart-section {
+    flex-direction: column;
+  }
+  
+  .category-legend {
+    flex: none;
+    max-width: none;
+  }
+  
+  .controls {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .control-group {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .control-slider {
+    width: 200px;
+  }
+  
+  .welcome-message {
+    padding: 2rem 1.5rem;
+  }
+  
+  .welcome-message h2 {
+    font-size: 1.6rem;
+  }
+  
+  .feature-preview {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Draggable Info Panel Mobile Adjustments */
+  .draggable-info-panel {
+    width: 90vw !important;
+    max-width: 350px;
+    position: fixed;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+  /* Statistics Grid Mobile Layout */
+  .statistics-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+
+  .stat-item {
+    padding: 0.8rem;
+  }
+
+  .stat-value {
+    font-size: 1.2rem;
+  }
+
+  .stat-label {
+    font-size: 0.7rem;
+  }
+
+  /* Chart Mobile Adjustments */
+  .chart-container {
+    min-height: 250px;
+  }
+
+  .pie-chart-container,
+  .bar-chart-container,
+  .treemap-container,
+  .radar-chart-container {
+    min-height: 200px;
+  }
+
+  /* Control Panel Mobile Layout */
+  .control-panel {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .category-filter-container {
+    max-width: none;
+    width: 100%;
+  }
+
+  .category-filter {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .category-chip {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.8rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 0.8rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .statistics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .control-slider {
+    width: 150px;
+  }
+
+  .slider-container {
+    padding: 0.8rem;
+  }
+
+  .category-chip {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.6rem;
+  }
+
+  .draggable-info-panel {
+    width: 95vw !important;
+    max-width: 320px;
+  }
+}
+
+/* Tablet specific adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .charts-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .statistics-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .controls {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .category-filter {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
