@@ -6,8 +6,8 @@ const InitialState: React.FC = () => {
     <div className="initial-state">
       <motion.div 
         className="welcome-card"
-        initial={{ opacity: 0, y: 30, scale: 0.95 }}
-        animate={{ opacity: 1, y: 0, scale: 1 }}
+        initial={{ opacity: 0, x: 30, scale: 0.95 }}
+        animate={{ opacity: 1, x: 0, scale: 1 }}
         transition={{ 
           duration: 0.6, 
           type: "spring", 
