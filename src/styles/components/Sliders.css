@@ -58,6 +58,16 @@
   transform:scale(1.12); box-shadow:0 6px 18px rgba(255,0,128,.55);
 }
 
+.slider-label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 .slider-value {
   color: var(--theme-bright-pink);
   font-weight: 900;

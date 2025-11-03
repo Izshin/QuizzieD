@@ -27,6 +27,13 @@
 
 .slider-group {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.slider-controls {
+  display: flex;
   align-items: center;
   gap: 0.5rem;
 }
