@@ -1,13 +1,19 @@
 # QuizzieD! 🎯
 
-A playful and animated React application built with Vite, TypeScript, and Framer Motion. QuizzieD explores what people ask every day through an engaging and colorful user interface.
+A playful and animated React application built with Vite, TypeScript, and Framer Motion. QuizzieD explores what people ask every day through an engaging and colorful user interface with interactive trivia visualization.
+
+## 🚀 Live Demo
+
+Visit the live application: [QuizzieD on GitHub Pages](https://Izshin.github.io/QuizzieD/)
 
 ## Features
 
 - **Animated Homepage**: Multi-colored gradient title with smooth animations
+- **Interactive Trivia Dashboard**: Modular visualization components with charts and statistics
 - **Cool Transitions**: Wave-like transition effect with a swinging question mark
 - **Responsive Design**: Works on all screen sizes
 - **Modern Tech Stack**: React 18 + TypeScript + Vite
+- **Modular Architecture**: Component-based design with organized CSS structure
 - **Smooth Animations**: Framer Motion for buttery animations
 
 ## Getting Started
@@ -26,6 +32,21 @@ A playful and animated React application built with Vite, TypeScript, and Framer
    ```bash
    npm run build
    ```
+
+## 📦 Deployment
+
+### GitHub Pages (Automatic)
+This project is configured for automatic deployment to GitHub Pages:
+
+1. **Push to main branch** - GitHub Actions will automatically build and deploy
+2. **Enable GitHub Pages** in repository settings (Settings → Pages → Source: GitHub Actions)
+3. **Access your site** at `https://yourusername.github.io/QuizzieD/`
+
+The deployment includes:
+- ✅ SPA routing support via `404.html` fallback
+- ✅ Proper base path configuration for GitHub Pages
+- ✅ Automatic build and deployment workflow
+- ✅ Asset optimization and caching
 
 ## Color Palette
 
