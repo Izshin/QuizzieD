@@ -33,7 +33,7 @@ const MainPage = () => {
               key="contact-title"
               style={{ 
                 fontSize: '3rem', 
-                background: 'linear-gradient(45deg, #f7ab55ff, #f43facff)',
+                background: 'linear-gradient(90deg, #f7ab55ff, #f43facff)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 marginBottom: '2rem'
@@ -48,9 +48,12 @@ const MainPage = () => {
               key="contact-desc"
               style={{ color: '#888', fontSize: '1.2rem' }}
             >
-              ivaferlimjob@gmail.com
+              Send a Gmail: ivaferlimjob@gmail.com
               <br />
-              <a href="mailto:ivaferlimjob@gmail.com">Send an Email</a>
+              <a style={{ color: '#f7ab55ff', textDecoration: 'underline' }} href="https://github.com/Izshin/QuizzieD">QuizzieD GitHub</a>
+              <br />
+              <a style={{ color: '#f43facff', textDecoration: 'underline' }} href="https://drive.google.com/drive/folders/107ynQi0T71bgqpq6vNEGe7zaBRqlv0cE?usp=sharing">Portfolio</a>
+
             </motion.p>
           </div>
         )

@@ -482,6 +482,12 @@ body {
   align-items: center;
 }
 
+.action-buttons {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
 .slider-group {
   display: flex;
   align-items: center;
